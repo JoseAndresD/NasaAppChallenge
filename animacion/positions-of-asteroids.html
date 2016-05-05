@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Simulator online, orbits and positions of asteroids — Astronoo</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta http-equiv="Content-Language" content="en">
+		<meta name="keywords" content="simulator, asteroids, position, alignment, movement, distance, rotation, orbits 3D, Aphelion, periapsis, Perihelion">
+		<meta name="description" content="Simulator online on orbits and positions of asteroids. With this simulator you will see the revolution of asteroids from all angles and orbits located between Mars and Jupiter. ">
+		<meta name="copyright" content="© Astronoo">
+		<meta name="Author" content="Christian Simoes">
+
+		<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+		<link rel="stylesheet" type="text/css" href="astronoo.css">
+		<link rel="stylesheet" type="text/css" href="/styles/menu.css">
+		<link rel="stylesheet" type="text/css" href="graphic.css">
+		<script type="text/javascript" src="openFrame.js"></script>
+		<script type="text/javascript">
+		  (function() {
+		    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+		    po.src = 'https://apis.google.com/js/plusone.js';
+		    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+		  })();
+</script>
+
+<script type="text/javascript">
+	var flags = null;
+	function changeLang(a, lang){
+		var newUrl = document.getElementById("lang-" + lang);
+		if(newUrl){
+			a.href = newUrl.href;
+		}
+		else{
+			a.href = "/" + lang + "/index.html";
+		}
+		return true;
+	}
+</script>
+
+</head>
+
+
+<body>
+
+	<div id="flagLanguage">
+		<a id="lang-fr" href="/fr/articles/positions-des-asteroides.html">fr</a>
+		<a id="lang-en" href="/en/articles/positions-of-asteroids.html">en</a>
+		<a id="lang-es" href="/es/articulos/posiciones-de-los-asteroides.html">es</a> 
+		<a id="lang-pt" href="/pt/artigos/posicoes-dos-asteroides.html">pt</a>
+	</div>
+	<div class="divGlobal"><!--webbot bot="Include" u-include="../../_include/_menu-en.html" tag="BODY" startspan --><table class="table1200"><tr><td class="tdImgLogoAstronoo"><a href="http://www.astronoo.com/en/"><img alt="astronomy" src="/images/logos/astronoo-logo-en.jpg"></a></td><td><table id="menuList"><tr><td>&nbsp;</td></tr><tr><td><div class="menu"><div id="T1" name="mntitle" class="menuTitle menuTitle1">Particles</div><div id="S_T1" name="items"><div class="fixWidth"></div><div name="item" class="menuItem"><a title="Electron quantum particle" name="aitem" href="electron.html" target="_self">Electron</a></div><div name="item" class="menuItem"><a title="Hadrons, subatomic particles" name="aitem" href="hadron.html" target="_self">Hadron</a></div><div name="item" class="menuItem"><a title="Electromagnetic spectrum and light" name="aitem" href="electromagnetic-spectrum.html" target="_self">Light</a></div><div name="item" class="menuItem"><a title="Photon travel from the center of the Sun to the Earth" name="aitem" href="journey-of-the-photon.html" target="_self">Photon</a></div><div name="item" class="menuItem"><a title="Size of the nanoparticles" name="aitem" href="nanoparticles.html" target="_self">Nanoparticles</a></div><div name="item" class="menuItem"><a title="Neutrino and constituents of matter" name="aitem" href="neutrino.html" target="_self">Neutrino</a></div><div name="item" class="menuItem"><a title="Absolute vacuum and ultrahigh vacuum" name="aitem" href="vacuum.html" target="_self">Vacuum</a></div><div name="item" class="menuItem"><a title="Magnetism" name="aitem" href="magnetism-and-magnetic-moment.html" target="_self">Magnetism</a></div><div name="item" class="menuItem"><a title="LHC, Large Hadron Collider" name="aitem" href="lhc.html" target="_self">LHC</a></div></div></div></td><td><div class="menu"><div id="T2" name="mntitle" class="menuTitle menuTitle2">Life</div><div id="S_T2" name="items"><div class="fixWidth"></div><div name="item" class="menuItem"><a title="The inert to the living" name="aitem" href="inert-and-living.html" target="_self">The inert and the living</a></div><div name="item" class="menuItem"><a title="Living cell and living system" name="aitem" href="living-cell.html" target="_self">Living cell</a></div><div name="item" class="menuItem"><a title="Liquid water, the perfect molecule" name="aitem" href="liquid-water.html" target="_self">Liquid water</a></div><div name="item" class="menuItem"><a title="Are we alone in the universe" name="aitem" href="are-we-alone.html" target="_self">Are we alone?</a></div><div name="item" class="menuItem"><a title="Toumai in the desert of Chad, skull fossil" name="aitem" href="toumai.html" target="_self">Toumaï</a></div><div name="item" class="menuItem"><a title="Life of the abyss, surprising organisms" name="aitem" href="life-in-the-abyss.html" target="_self">Deep sea life</a></div><div name="item" class="menuItem"><a title="Ordovician or explosion of life" name="aitem" href="ordovician.html" target="_self">Explosion of life</a></div><div name="item" class="menuItem"><a title="Neanderthal man" name="aitem" href="neanderthal.html" target="_self">Neanderthal</a></div><div name="item" class="menuItem"><a title="Asimo, the humanoid furur" name="aitem" href="asimo.html" target="_self">Asimo</a></div><div name="item" class="menuItem"><a title="Tardigrades" name="aitem" href="../news/tardigrade.html" target="_self">Tardigrade</a></div><div name="item" class="menuItem"><a title="Global warming and greenhouse effect" name="aitem" href="global-warming.html" target="_self">Global warming</a></div></div></div></td><td><div class="menu"><div id="T3" name="mntitle" class="menuTitle menuTitle3">Planets</div><div id="S_T3" name="items"><div class="fixWidth"></div><div name="item" class="menuItem"><a title="Simulator on line, positions of the planets" name="aitem" href="positions-of-the-planets.html" target="_self">Simulator</a></div><div name="item" class="menuItem"><a title="Mercury the smallest planet" name="aitem" href="../mercury.html" target="_self">Mercury</a></div><div name="item" class="menuItem"><a title="Venus the hottest planet" name="aitem" href="../venus.html" target="_self">Venus</a></div><div name="item" class="menuItem"><a title="Earth blue planet" name="aitem" href="../earth.html" target="_self">Earth</a></div><div name="item" class="menuItem"><a title="Mars dear planet" name="aitem" href="../mars.html" target="_self">Mars</a></div><div name="item" class="menuItem"><a title="Asteroids and meteorites" name="aitem" href="../asteroids.html" target="_self">Asteroids</a></div><div name="item" class="menuItem"><a title="Faq answers on the physics of the Universe" name="aitem" href="../faq.html" target="_self">FAQ</a></div><div name="item" class="menuItem"><a title="Astronomy for children" name="aitem" href="../children/index.html" target="_self">Astronomy for children</a></div><div name="item" class="menuItem"><a title="About astronoo site, infinite space" name="aitem" href="../about.html" target="_self">about...</a></div></div></div></td></tr></table><script type="text/javascript">var _0x3405=["\x61\x64\x64\x45\x76\x65\x6E\x74\x4C\x69\x73\x74\x65\x6E\x65\x72","\x75\x6E\x64\x65\x66\x69\x6E\x65\x64","\x61\x74\x74\x61\x63\x68\x45\x76\x65\x6E\x74","\x6F\x6E","\x65\x76\x65\x6E\x74","\x74\x61\x72\x67\x65\x74","\x73\x72\x63\x45\x6C\x65\x6D\x65\x6E\x74","\x6E\x6F\x64\x65\x54\x79\x70\x65","\x70\x61\x72\x65\x6E\x74\x4E\x6F\x64\x65","\x74\x69\x6D\x65\x6F\x75\x74","\x66\x63\x74","\x6D\x65\x6E\x75\x4C\x69\x73\x74","\x67\x65\x74\x45\x6C\x65\x6D\x65\x6E\x74\x42\x79\x49\x64","\x69\x74\x65\x6D\x73","\x67\x65\x74\x45\x6C\x65\x6D\x65\x6E\x74\x73\x42\x79\x4E\x61\x6D\x65","\x6C\x65\x6E\x67\x74\x68","\x64\x69\x76","\x67\x65\x74\x45\x6C\x65\x6D\x65\x6E\x74\x73\x42\x79\x54\x61\x67\x4E\x61\x6D\x65","\x6E\x61\x6D\x65","\x67\x65\x74\x41\x74\x74\x72\x69\x62\x75\x74\x65","\x63\x6C\x61\x73\x73\x4E\x61\x6D\x65","\x6D\x6F\x75\x73\x65\x6F\x76\x65\x72","\x6D\x6E\x74\x69\x74\x6C\x65","\x53\x5F","\x69\x64","\x6F\x72\x69\x67\x43\x6C\x61\x73\x73\x4E\x61\x6D\x65","\x20\x6D\x65\x6E\x75\x54\x69\x74\x6C\x65\x53\x65\x6C\x65\x63\x74\x65\x64","\x64\x69\x73\x70\x6C\x61\x79","\x73\x74\x79\x6C\x65","\x62\x6C\x6F\x63\x6B","\x6F\x66\x66\x73\x65\x74\x4C\x65\x66\x74","\x70\x78","\x6C\x65\x66\x74","\x69\x74\x65\x6D","\x6D\x65\x6E\x75\x49\x74\x65\x6D\x20\x6D\x65\x6E\x75\x49\x74\x65\x6D\x53\x65\x6C\x65\x63\x74\x65\x64","\x61\x69\x74\x65\x6D","\x63\x6C\x69\x63\x6B","\x63\x68\x69\x6C\x64\x4E\x6F\x64\x65\x73","\x68\x72\x65\x66","\x5F\x73\x65\x6C\x66","","\x6F\x70\x65\x6E","\x6D\x6F\x75\x73\x65\x6F\x75\x74","\x6E\x6F\x6E\x65","\x6D\x65\x6E\x75\x49\x74\x65\x6D"];function addEventLst(_0x88cbx2,_0x88cbx3,_0x88cbx4){if( typeof _0x88cbx2[_0x3405[0]]!=_0x3405[1]){_0x88cbx2[_0x3405[0]](_0x88cbx3,_0x88cbx4,false);} else {if( typeof _0x88cbx2[_0x3405[2]]!=_0x3405[1]){_0x88cbx2[_0x3405[2]](_0x3405[3]+_0x88cbx3,_0x88cbx4);} else {_0x88cbx2[_0x3405[3]+_0x88cbx3]=_0x88cbx4;} ;} ;} ;function getEvtTarget(_0x88cbx6){var _0x88cbx7;if(!_0x88cbx6){var _0x88cbx6=window[_0x3405[4]];} ;if(_0x88cbx6[_0x3405[5]]){_0x88cbx7=_0x88cbx6[_0x3405[5]];} else {if(_0x88cbx6[_0x3405[6]]){_0x88cbx7=_0x88cbx6[_0x3405[6]];} ;} ;if(_0x88cbx7[_0x3405[7]]==3){_0x88cbx7=_0x88cbx7[_0x3405[8]];} ;return _0x88cbx7;} ;var closeTimeout=500;var menuListTimeout= new Object();function setMenuTimeout(_0x88cbxb,_0x88cbx4){clearMenuTimeout(_0x88cbxb);menuListTimeout[_0x88cbxb]={key:_0x88cbxb,fct:_0x88cbx4,timeout:null};menuListTimeout[_0x88cbxb][_0x3405[9]]=setTimeout(_0x88cbx4,closeTimeout);} ;function clearMenuTimeout(_0x88cbxb){if(menuListTimeout[_0x88cbxb]&&menuListTimeout[_0x88cbxb][_0x3405[9]]!=null){clearTimeout(menuListTimeout[_0x88cbxb][_0x3405[9]]);delete menuListTimeout[_0x88cbxb];} ;} ;function pauseMenuTimeout(_0x88cbxb){if(menuListTimeout[_0x88cbxb]&&menuListTimeout[_0x88cbxb][_0x3405[9]]!=null){clearTimeout(menuListTimeout[_0x88cbxb][_0x3405[9]]);menuListTimeout[_0x88cbxb][_0x3405[9]]=null;} ;} ;function restartMenuTimeout(_0x88cbxb){pauseMenuTimeout(_0x88cbxb);if(menuListTimeout[_0x88cbxb]){menuListTimeout[_0x88cbxb][_0x3405[9]]=setTimeout(menuListTimeout[_0x88cbxb][_0x3405[10]],closeTimeout);} ;} ;function execMenuTimeout(_0x88cbx10){for(var _0x88cbxb in menuListTimeout){if(_0x88cbx10!=_0x88cbxb&&menuListTimeout[_0x88cbxb]){clearTimeout(menuListTimeout[_0x88cbxb][_0x3405[9]]);menuListTimeout[_0x88cbxb][_0x3405[10]]();delete menuListTimeout[_0x88cbxb];} ;} ;} ;var menuList=document[_0x3405[12]](_0x3405[11]);var itemsList=document[_0x3405[14]](_0x3405[13]);if(!itemsList||itemsList[_0x3405[15]]<1){itemsList=document[_0x3405[17]](_0x3405[16]);} ;for(var i=0;i<itemsList[_0x3405[15]];i++){if(itemsList[i][_0x3405[19]](_0x3405[18])==_0x3405[13]){itemsList[i][_0x3405[20]]=_0x3405[13];} ;} ;if(menuList){addEventLst(menuList,_0x3405[21],function (_0x88cbx14){var _0x88cbx15=getEvtTarget(_0x88cbx14);if(_0x88cbx15[_0x3405[19]](_0x3405[18])==_0x3405[22]){clearMenuTimeout(_0x3405[23]+_0x88cbx15[_0x3405[24]]);execMenuTimeout(_0x3405[23]+_0x88cbx15[_0x3405[24]]);if(!_0x88cbx15[_0x3405[25]]){_0x88cbx15[_0x3405[25]]=_0x88cbx15[_0x3405[20]];} ;_0x88cbx15[_0x3405[20]]=_0x88cbx15[_0x3405[25]]+_0x3405[26];var _0x88cbx16=document[_0x3405[12]](_0x3405[23]+_0x88cbx15[_0x3405[24]]);_0x88cbx16[_0x3405[28]][_0x3405[27]]=_0x3405[29];var _0x88cbx17=_0x88cbx15[_0x3405[30]]+_0x3405[31];if(_0x88cbx16[_0x3405[28]][_0x3405[32]]!=_0x88cbx17){_0x88cbx16[_0x3405[28]][_0x3405[32]]=_0x88cbx17;} ;} else {if(_0x88cbx15[_0x3405[19]](_0x3405[18])==_0x3405[33]){if(_0x88cbx15[_0x3405[8]][_0x3405[8]][_0x3405[19]](_0x3405[18])==_0x3405[13]){pauseMenuTimeout(_0x88cbx15[_0x3405[8]][_0x3405[8]][_0x3405[24]]);} else {pauseMenuTimeout(_0x88cbx15[_0x3405[8]][_0x3405[24]]);} ;_0x88cbx15[_0x3405[20]]=_0x3405[34];} else {if(_0x88cbx15[_0x3405[19]](_0x3405[18])==_0x3405[35]){if(_0x88cbx15[_0x3405[8]][_0x3405[8]][_0x3405[19]](_0x3405[18])==_0x3405[13]){pauseMenuTimeout(_0x88cbx15[_0x3405[8]][_0x3405[8]][_0x3405[24]]);} else {pauseMenuTimeout(_0x88cbx15[_0x3405[8]][_0x3405[24]]);} ;_0x88cbx15[_0x3405[8]][_0x3405[20]]=_0x3405[34];} ;} ;} ;} );addEventLst(menuList,_0x3405[36],function (_0x88cbx14){var _0x88cbx15=getEvtTarget(_0x88cbx14);if(_0x88cbx15[_0x3405[19]](_0x3405[18])==_0x3405[33]){for(var i=0;i<_0x88cbx15[_0x3405[37]][_0x3405[15]];i++){if(_0x88cbx15[_0x3405[37]][i]&&_0x88cbx15[_0x3405[37]][i][_0x3405[19]]&&_0x88cbx15[_0x3405[37]][i][_0x3405[19]](_0x3405[18])==_0x3405[35]){window[_0x3405[41]](_0x88cbx15[_0x3405[37]][i][_0x3405[19]](_0x3405[38]),_0x3405[39],_0x3405[40]);} ;} ;} ;} );addEventLst(menuList,_0x3405[42],function (_0x88cbx14){var _0x88cbx15=getEvtTarget(_0x88cbx14);if(_0x88cbx15[_0x3405[19]](_0x3405[18])==_0x3405[22]){setMenuTimeout(_0x3405[23]+_0x88cbx15[_0x3405[24]],function (){_0x88cbx15[_0x3405[20]]=_0x88cbx15[_0x3405[25]];document[_0x3405[12]](_0x3405[23]+_0x88cbx15[_0x3405[24]])[_0x3405[28]][_0x3405[27]]=_0x3405[43];} );} else {if(_0x88cbx15[_0x3405[19]](_0x3405[18])==_0x3405[33]){if(_0x88cbx15[_0x3405[8]][_0x3405[8]][_0x3405[19]](_0x3405[18])==_0x3405[13]){restartMenuTimeout(_0x88cbx15[_0x3405[8]][_0x3405[8]][_0x3405[24]]);} else {restartMenuTimeout(_0x88cbx15[_0x3405[8]][_0x3405[24]]);} ;_0x88cbx15[_0x3405[20]]=_0x3405[44];} else {if(_0x88cbx15[_0x3405[19]](_0x3405[18])==_0x3405[35]){if(_0x88cbx15[_0x3405[8]][_0x3405[8]][_0x3405[19]](_0x3405[18])==_0x3405[13]){restartMenuTimeout(_0x88cbx15[_0x3405[8]][_0x3405[8]][_0x3405[24]]);} else {restartMenuTimeout(_0x88cbx15[_0x3405[8]][_0x3405[24]]);} ;_0x88cbx15[_0x3405[8]][_0x3405[20]]=_0x3405[44];} ;} ;} ;} );} ;</script>
+</td></tr></table><table class="table1200"><tr><td>&nbsp;</td></tr><tr><td><div class="imgGoogle"><script async="" src="http://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><ins class="adsbygoogle" style="display: inline-block; width: 728px; height: 90px" data-ad-client="ca-pub-7403875279341833" data-ad-slot="6962142242"></ins><script>
+			(adsbygoogle = window.adsbygoogle || []).push({});
+			</script></div></td><td class="tdSearchGoogle"><script>
+  (function() {
+    var cx = 'partner-pub-7403875279341833:n6ilu8-lfoy';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+        '//www.google.com/cse/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+<gcse:search></gcse:search></td></tr></table><table class="table1200"><tr><td>&nbsp;</td></tr><tr><td><table><tr><td><a onclick="return changeLang(this, 'en');" title="English" href="/en/index.html"><div class="drapeau en">&nbsp; </div></a></td><td><a onclick="return changeLang(this, 'es');" title="Español" href="/es/index.html"><div class="drapeau es">&nbsp; </div></a></td><td><a onclick="return changeLang(this, 'fr');" title="Français" href="/fr/index.html"><div class="drapeau fr">&nbsp; </div></a></td><td><a onclick="return changeLang(this, 'pt');" title="Português" href="/pt/index.html"><div class="drapeau pt">&nbsp; </div></a></td><td class="ligne">&nbsp;</td><td>&nbsp; <script type="text/javascript">
+					var a="<" + "a tile=\"Conchurks.f'm:p@?bjA+wd>g/";
+					function getCharAt(str, lst){ var out = "";for(var i=0; i<lst.length; i++)out += str.charAt(lst[i]);return out;}
+					document.write(getCharAt(a,[0,1,2,3,4,3,5,6,7,8,9,10,11,3,1,12,3,2,3,13,6,2,1,14,3,10,15,8,2,10,11,12,5,4,12,16,7,8,3,13,4,17,18,13,15,6,19,2,7,2,20,21,1,4,5,3,10,22,23,10,17,3,21,1,17,3,6,15,24,1,17,3,15,10,11,10,10,18,12,10,21,25,17,14,26,27,6,12,3,7,1,26,10,14,3,2,28,17,3,15,10,11,10,10,2,17,4,3,6,2,20,2,29,2,30,4,11,31,10,30,18,5,10,12,1,3,4,10,11,18,13,15,6,19,8,32,0,4,21,33,2,1,5,3,7,8,9,10,11,3,1,12,3,2,3,13,6,2,1,14,3,10,15,8,2,17,15,12,7,8,34,4,21,1,33,6,17,34,5,10,33,10,17,34,21,1,4,5,18,27,23,33,8,32,0,34,1,32]));
+					</script>&nbsp;&nbsp; </td><td><a title="RSS Astronoo (New window)" href="/en/rssAstronoo.xml" target="_blank"><img alt="RSS astronoo" src="/images/logos/rss.jpg"></a>&nbsp;&nbsp; </td><td><a href="../about.html"><img alt="about" src="/images/logos/about.png"></a>&nbsp;&nbsp; </td><td><a title="google+ (New window)" target="_blank" href="https://plus.google.com/113295196064585237454?rel=author"><img alt="google+" src="/images/logos/google+.jpg"></a><a title="google+" href="https://plus.google.com/113295196064585237454?rel=author"></a>&nbsp;&nbsp; </td><td><g:plusone size="medium" annotation="none"></g:plusone>&nbsp;</td></tr></table></td></tr><tr><td>&nbsp;</td></tr></table><!--webbot bot="Include" endspan i-checksum="56152" --><table class="table1200"><tr><td class="tdBody"><table class="tableauGrand"><tr class="titrePage"><td colspan="5"><h1>Simulator 3D, positions of asteroids</h1></td></tr><tr><td class="colonneEditionSousTitre"><h2>Revolution of asteroids</h2></td><td class="colonneSeparateur">&nbsp;</td><td class="traduction"><a target="_blank" href="/en/about.html#automatique-translation"><img alt="Automatic translation" src="/images/logos/translate.png">Automatic translation</a></td><td class="colonneSeparateur">&nbsp;</td><td class="colonneEditionCategorie"><a class="category" href="../rubrics/asteroids.html">Category: asteroids and comets</a><br><span class="TexteBasDePage">Updated November 16, 2013</span></td></tr><tr><td class="colonneEdition"><p>Using interactive simulator <a target="_blank" href="../index.html">Astronoo</a>: <br>With this simulator you will see the revolution of <a target="_blank" href="../asteroids.html">asteroids</a> from all angles and orbits located between Mars and Jupiter. <br>Initially we are "above" the solar system (this is a view from the north celestial pole) and the passage of time is set to 10 days per second, which can see the planets rotate and asteroids in their orbits but you can go back in the future or in the past by using the buttons above. You can zoom in (top right) to the inner solar system while leaving the asteroid rotated.</p></td><td class="colonneSeparateur">&nbsp;</td><td class="colonneEdition"><p>With the arrows at the bottom right you can switch the orbital planes of asteroids and if you want more information, see the orbits more or less, use the buttons at the bottom left.<br><br>nota: You will notice that objects have different speeds, they respect the law of areas of Johannes Kepler (1571-1630). Approaching the perihelion (closest point to the Sun), objects accelerate at the approach of the aphelion (farthest point from the Sun), they slow down. To view distances (million km), click the aphelion / perihelion button.</p></td><td class="colonneSeparateur">&nbsp;</td><td class="colonneEdition"><p><strong>Also play with the mouse:</strong> Clicking in the simulator gives you a hand to redirect the solar system and the desired view objects continue to revolve around the Sun. Click again to freeze the view and zoom.<br><br>nota: Warning, more the objects are close to you and more they are big.<br><br>Safe journey!</p></td></tr></table><table class="tableauGrand"><tr><td><p class="pCenter"><iframe id="asteroidSystem" src="about:blank" width="1010" height="600" style="border: none;" scrolling="no"></iframe><script type="text/javascript">
+						var frameSolarSystem = document.getElementById("asteroidSystem");
+						if(parseInt(window.navigator.appVersion) < 5)
+							frameSolarSystem.src = "/animations/no-compatible.html";
+						else
+							frameSolarSystem.src = "/animations/asteroids-system.xhtml?l=en&dwarf=true&dist=false&name=true&orbit=0.6&speed=10&zoomStartAt=0&zoomScrollTo=3&startAngleY=45&startAngleX=-40";
+					</script></p></td></tr></table><table class="tableauGrand"><tr><td class="colonneEditionSousTitre"><h2>Asteroids</h2></td><td class="colonneSeparateur">&nbsp;</td><td class="colonneEditionVide">&nbsp;</td><td class="colonneSeparateur">&nbsp;</td><td class="colonneEditionVide">&nbsp;</td></tr><tr><td class="colonneEdition"><p>Millions of small rocky bodies called <strong>asteroids</strong> are present in the solar system. If the asteroid were "bright", we would see as much as stars in the night sky. A significant portion of them circulate in a ring between the orbits of Mars and Jupiter, between 2 and 4 AU, called the asteroid belt. It thus marks the boundary between the terrestrial planets and the gas giants. An asteroid is a celestial object in the solar system, not visible to the naked eye because of its small size, which varies from a few tens of meters to several hundred kilometers in diameter. Objects less than 50 m in diameter are called meteorites. Asteroids are remnants of the protoplanetary disk that failed to gather enough to form a planet during their formation. Asteroids are of great importance in understanding the formation of the solar system, it is for this reason that astronomers show a strong interest in the study of these objects. Since February 2011, the NEOWISE NASA mission dedicated to research in the infrared small body, completed its quest on asteroids and comets in our solar system. NEOWISE discovered 20 comets, more than 33,000 asteroids in the main belt between <a target="_blank" href="../mars.html">Mars</a> and <a target="_blank" href="../jupiter.html">Jupiter</a>, and 134 near-Earth objects (NEOs). NEOs are asteroids and comets with orbits less than 1.3 AU, i.e. they can come within 45 million km from Earth orbit. The new model represents the coverage of NEOs is shown on the left of the image. It can thus be compared to the old model, which estimates the visible were higher. Observations NEOWISE reduce by 40%, the actual number of near-Earth asteroids that exceed 100 meters.</p></td><td class="colonneSeparateur">&nbsp;</td><td class="colonneEditionTable"><!--webbot bot="Include" u-include="../../_include/_tables/_asteroids-table1.html" tag="BODY" startspan -->
+
+	<table class="tableEdition">
+		<tr>
+			<td><strong>Asteroids</strong></td>
+			<td class="tdRight"><strong>Approximate<br>dimensions</strong></td>
+			<td class="tdRight"><strong>Discovery <br>date</strong></td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td class="tdRight">&nbsp;</td>
+			<td class="tdRight">&nbsp;</td>
+		</tr>
+		<tr>
+			<td>Ceres 1</td>
+			<td class="tdRight">974.6 km </td>
+			<td class="tdRight">1801</td>
+		</tr>
+		<tr>
+			<td>Pallas 2</td>
+			<td class="tdRight">582×556×500 km</td>
+			<td class="tdRight">1802</td>
+		</tr>
+		<tr>
+			<td>Vesta 4</td>
+			<td class="tdRight">572.6x557.2x446 km</td>
+			<td class="tdRight">1807</td>
+		</tr>
+		<tr>
+			<td>Hygiea 10</td>
+			<td class="tdRight">530x407x370 km</td>
+			<td class="tdRight">1849</td>
+		</tr>
+		<tr>
+			<td>Sylvia 87</td>
+			<td class="tdRight">384x262x232 km</td>
+			<td class="tdRight">1866</td>
+		</tr>
+		<tr>
+			<td>Hektor 624</td>
+			<td class="tdRight">370x195x195 km</td>
+			<td class="tdRight">1907</td>
+		</tr>
+		<tr>
+			<td>Europa 52</td>
+			<td class="tdRight">360x315x240 km</td>
+			<td class="tdRight">1858</td>
+		</tr>
+		<tr>
+			<td>Eunomia 15</td>
+			<td class="tdRight">357x355x212 km</td>
+			<td class="tdRight">1851</td>
+		</tr>
+		<tr>
+			<td>Davida 511</td>
+			<td class="tdRight">357x294x231 km</td>
+			<td class="tdRight">1903</td>
+		</tr>
+		<tr>
+			<td>Interamnia 704</td>
+			<td class="tdRight">350.3x303.6 km</td>
+			<td class="tdRight">1910</td>
+		</tr>
+		<tr>
+			<td>Camilla 107</td>
+			<td class="tdRight">344x246x205 km</td>
+			<td class="tdRight">1868</td>
+		</tr>
+		<tr>
+			<td>Juno 3</td>
+			<td class="tdRight">320x267x200 km</td>
+			<td class="tdRight">1804</td>
+		</tr>
+		<tr>
+			<td>Cybele 65</td>
+			<td class="tdRight">302x290x232 km</td>
+			<td class="tdRight">1861</td>
+		</tr>
+		<tr>
+			<td>Hermione 121</td>
+			<td class="tdRight">268x186x183 km</td>
+			<td class="tdRight">1872</td>
+		</tr>
+		<tr>
+			<td>Euphrosyne 31</td>
+			<td class="tdRight">255.9 km</td>
+			<td class="tdRight">1854</td>
+		</tr>
+				   <tr>
+			<td>Chariklo 10199</td>
+			<td class="tdRight">248x258 km</td>
+			<td class="tdRight">1997</td>
+				   </tr>
+		<tr>
+			<td>Iris 7</td>
+			<td class="tdRight">240x200x200 km</td>
+			<td class="tdRight">1847</td>
+		</tr>
+		<tr>
+			<td>Psyche 16</td>
+			<td class="tdRight">240x185x145 km </td>
+			<td class="tdRight">1852</td>
+		</tr>
+		<tr>
+			<td>Daphne 41</td>
+			<td class="tdRight">239x183x153 km</td>
+			<td class="tdRight">1856</td>
+		</tr>
+		<tr>
+			<td>Kalliope 22</td>
+			<td class="tdRight">235x144x124 km</td>
+			<td class="tdRight">1852</td>
+		</tr>
+		<tr>
+			<td>Amphitrite 29</td>
+			<td class="tdRight">233x212x193 km</td>
+			<td class="tdRight">1854</td>
+		</tr>
+	</table>
+
+<!--webbot bot="Include" endspan i-checksum="25103" --></td><td class="colonneSeparateur">&nbsp;</td><td class="colonneEdition"><a title="chart of near-Earth asteroids" href="/images/asteroides/asteroides-geocroiseurs-carte-du-ciel.jpg" onclick="openImg(this.href, 20, 20); return false;"><img class="imgEdition" alt="chart of near-Earth asteroids" src="/images/asteroides/asteroides-geocroiseurs-carte-du-ciel_315.jpg"></a><h3>Image: Representation of the inner solar system where each red dot represents one asteroid. Of course the sizes of objects are not to scale. The infrared observations of NEOWISE are more precise than those obtained previously in visible light because asteroids of the same size emit substantially the same amount of infrared radiation, so they reflect a highly variable amount of visible light according to their albedo. The results of NEOWISE allow requalify the number of asteroids of significant size from 35&nbsp;000 to 19 500, however, the majority of objects remains yet to be discovered.</h3></td></tr></table><!--webbot bot="Include" u-include="../../_include/_footers/_asteroids-en.html" tag="BODY" startspan -->
+
+<table class="tableauGrand">
+	<tr>
+		<td>
+		<h2>See also</h2>
+		</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+	</tr>
+	<tr>
+		<td class="menuCenter"><a href="/en/articles/asteroids-the-threat.html"><img alt="Asteroid " src="/images/articles/asteroide-virtuel_150.jpg" class="imgSmall"></a></td>
+		<td class="menuCenter"><a href="/en/articles/meteorites.html"><img alt="météorite" src="/images/asteroides/meteorite-metallique-mars_150.jpg" class="imgSmall"></a></td>
+		<td class="menuCenter"><a href="/en/articles/near-earth-objects.html"><img alt="The Earth-Crossing Asteroids - NEO" src="/images/asteroides/asteroide-90-antiope_150.jpg" class="imgSmall"></a></td>
+		<td class="menuCenter"><a href="/en/articles/zones-asteroids.html"><img alt="Areas with asteroids and comets" src="/images/articles/asteroide_150.png" class="imgSmall"></a></td>
+		<td class="menuCenter"><a href="/en/articles/kuiper-belt.html"><img alt="Kuiper belt" src="/images/planetes/ceintureKuiper/petit-objet-ceinture-de-kuiper_150.jpg" class="imgSmall"></a></td>
+		<td class="menuCenter"><a href="/en/articles/asteroid-or-comet.html"><img alt="asteroid or comet (Itokawa and hartley 2)" src="/images/asteroides/asteroide-itokawa_small.jpg" class="imgSmall"></a></td>
+	</tr>
+	<tr>
+		<td class="menuCenter"><a href="/en/articles/asteroids-the-threat.html">Asteroid the threat<br>for the life...</a></td>
+		<td class="menuCenter"><a href="/en/articles/meteorites.html">Meteorite, extra<br>terrestrial object...</a></td>
+		<td class="menuCenter"><a href="/en/articles/near-earth-objects.html">Earth-Crossing<br>Asteroids...</a></td>
+		<td class="menuCenter"><a href="/en/articles/zones-asteroids.html">Areas with<br>asteroids and comets...</a></td>
+		<td class="menuCenter"><a href="/en/articles/kuiper-belt.html">Objects in the<br>Kuiper Belt...</a></td>
+		<td class="menuCenter"><a href="/en/articles/asteroid-or-comet.html">Asteroid or comet ?</a></td>
+	</tr>
+	<tr>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+	</tr>
+	<tr>
+		<td class="menuCenter"><a href="/en/asteroids.html"><img alt="What is an asteroid?" src="/images/asteroides/asteroide-pallas_150.jpg" class="imgSmall"></a></td>
+		<td class="menuCenter"><a href="/en/articles/positions-of-asteroids.html"><img alt="Simulator revolution and orbits of asteroids" src="/images/asteroides/positions-des-asteroides_small.jpg" class="imgSmall"></a></td>
+		<td class="menuCenter"><a href="/en/articles/apophis-risk-impact.html"><img alt="Apophis, the next disaster" src="/images/asteroides/asteroide-vague-apophis_150.jpg" class="imgSmall"></a></td>
+		<td class="menuCenter"><a href="/en/articles/trojan-asteroid-earth.html"><img alt="2010 TK7, Trojan asteroid of the Earth" src="/images/asteroides/asteroide-troyen-terre-tk7_small.jpg" class="imgSmall"></a></td>
+		<td class="menuCenter"><a href="/en/articles/torino-scale.html"><img alt="Torino scale" src="/images/asteroides/echelle-de-turin_150.png" class="imgSmall"></a></td>
+		<td class="menuCenter"><a href="/en/articles/nice-model.html"><img alt="Nice model, the late heavy bombardment" src="/images/planetes/formation-planetes_315.jpg" class="imgSmall"></a></td>
+	</tr>
+	<tr>
+		<td class="menuCenter"><a href="/en/asteroids.html">What is a asteroid?</a></td>
+		<td class="menuCenter"><a href="/en/articles/positions-of-asteroids.html">Simulator the round <br>of asteroids...</a></td>
+		<td class="menuCenter"><a href="/en/articles/apophis-risk-impact.html">Apophis,<br>the next disaster...</a></td>
+		<td class="menuCenter"><a href="/en/articles/trojan-asteroid-earth.html">2010 TK7, Trojan<br>asteroid of the Earth...</a></td>
+		<td class="menuCenter"><a href="/en/articles/torino-scale.html">Classification<br>on the Torino Scale...</a></td>
+		<td class="menuCenter"><a href="/en/articles/nice-model.html">Nice model, the late<br>heavy bombardment...</a></td>
+	</tr>
+</table>
+<table class="tableauGrand">
+	<tr>
+		<td>&nbsp;</td>
+	</tr>
+	<tr>
+		<td><a href="/en/index.html"><img alt="star" src="/images/basDePage/amas-etoiles_1010.jpg"></a></td>
+	</tr>
+	<tr>
+		<td class="lineBackground">&nbsp;</td>
+	</tr>
+	<tr>
+		<td class="TexteBasDePage"><a href="http://www.astronoo.com/en/index.html">1997-2013 © Astronoo.com</a> - Astronomy, Astrophysics, Evolution and 
+		Earth science.</td>
+	</tr>
+	<tr>
+		<td class="TexteBasDePage">Reproduction prohibited without permission of the author.</td>
+	</tr>
+	<tr>
+		<td><a title="XITI (New window)" href="http://www.xiti.com/xiti.asp?s=223107" target="_blank">
+		<script type="text/javascript">
+				Xt_param= 's=223107&p='+window.location.pathname;
+				try {Xt_r = top.document.referrer;}
+				catch(e) {Xt_r = document.referrer; }
+				Xt_h = new Date();
+				Xt_i = '<img width="80" height="15" alt="" ';
+				Xt_i += 'src="http://logv29.xiti.com/rcg.xiti?'+Xt_param;
+				Xt_i += '&hl='+Xt_h.getHours()+'x'+Xt_h.getMinutes()+'x'+Xt_h.getSeconds();
+				if(parseFloat(navigator.appVersion)>=4)
+				{Xt_s=screen;Xt_i+='&r='+Xt_s.width+'x'+Xt_s.height+'x'+Xt_s.pixelDepth+'x'+Xt_s.colorDepth;}
+				document.write(Xt_i+'&ref='+Xt_r.replace(/[<>"]/g, '').replace(/&/g, '$')+'" title="Internet Audience">');
+			</script>
+		</a></td>
+	</tr>
+</table>
+
+<!--webbot bot="Include" endspan i-checksum="8203" --></td><td><table><tr><td class="bandeauDroit"><!--webbot bot="Include" u-include="../../_include/_bandeau-droit.html" tag="BODY" startspan -->
+
+<table class="table">
+	<tr>
+		<td>
+		<div class="pubDroit">
+			<script async="" src="http://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+			<ins class="adsbygoogle" style="display: inline-block; width: 160px; height: 600px" data-ad-client="ca-pub-7403875279341833" data-ad-slot="6054688441"></ins>
+			<script>
+			(adsbygoogle = window.adsbygoogle || []).push({});
+			</script>
+		</div>
+		</td>
+	</tr>
+	<tr>
+		<td>
+		<script type="text/javascript">
+		var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+		document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+		</script>
+		<script type="text/javascript">
+		var pageTracker = _gat._getTracker("UA-5840696-1");
+		pageTracker._trackPageview();
+		</script>
+		</td>
+	</tr>
+</table>
+<script type="text/javascript" src="/js/glossary.js"></script>
+
+<!--webbot bot="Include" endspan i-checksum="29125" --></td></tr><tr><td class="bandeauDroit"><table class="table"><tr><td class="bandeauDroit"><a href="../juno.html"><img alt="Asteroid Juno disfigured by a collision" src="/images/asteroides/asteroide-junon_150.jpg" class="imgSmall"></a></td></tr><tr><td class="bandeauDroit"><a href="../juno.html">Asteroid Juno disfigured<br>by a collision...</a></td></tr></table></td></tr><tr><td>&nbsp;</td></tr><tr><td class="bandeauDroit"><a href="positions-of-the-planets.html"><img alt="Simulator, rotation and position of the planets (dynamic graphic)" src="/images/planetes/positions-des-planetes_small.jpg" class="imgSmall"></a></td></tr><tr><td class="bandeauDroit"><a href="positions-of-the-planets.html">Simulator, the<br>revolution of the planets...</a></td></tr><tr><td>&nbsp;</td></tr><tr><td class="bandeauDroit"><a href="journey-into-the-solar-system.html"><img alt="Diversity of solar system objects" src="../../images/planetes/mars/olympus-mons-on-mars_small.jpg" class="imgSmall"></a></td></tr><tr><td class="bandeauDroit"><a href="journey-into-the-solar-system.html">Tourist travel<br>in the solar system...</a></td></tr><tr><td>&nbsp;</td></tr><tr><td class="bandeauDroit"><a href="characteristics-of-planets.html"><img alt="Characteristics of Planets" src="/images/planetes/kepler-deuxieme-loi_150.png" class="imgSmall"></a></td></tr><tr><td class="bandeauDroit"><a href="characteristics-of-planets.html">Characteristics<br>of the planets...</a></td></tr></table></td></tr></table></div></body></html>

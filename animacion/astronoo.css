@@ -1,0 +1,1051 @@
+BODY {
+	text-align:center;
+ 	font-family:Verdana, Geneva, Tahoma, sans-serif;
+	margin-top:3px;
+	background-color:#FFFFFF;
+	margin-left:20px;
+	margin-right:20px;
+	margin-bottom:3px;
+}
+.menu {
+	font-size:11px;
+	color:#A11E23;
+	background-position:left top;
+	margin-top:auto;
+	margin-right:auto;
+	margin-bottom:auto;
+	margin-left:auto;
+	background-color:#FFFFFF;
+	border:0px;
+}
+.divGlobal {
+	margin-left:auto;
+	margin-right:auto;
+	width:1200px;
+ 	background-color:#FFFFFF;
+}
+TR {
+	font-size:12px;
+	color:#000000;
+	text-align:justify;
+	line-height:18px;
+}
+TD {
+	vertical-align:top;
+}
+H1 {
+	text-align:left;
+    line-height:18px;
+	font-size:24px;
+	font-weight:bold;
+	color:#444444;
+	height:16px;
+}
+H2 {
+    border-bottom-style:solid;
+	text-align:left;
+    line-height:15px;
+	font-size:14px;
+	vertical-align:top;
+	color:#A11E23;
+}
+H3 {
+	font-family:Arial;
+	font-size:12px;
+	color:#555555;
+	line-height:18px;
+}
+P {
+	font-size:12px;
+	color:#555555;
+	line-height:16px;
+}
+A {
+	text-decoration:none;
+	color:#A11E23;
+	cursor:pointer;
+}
+A:hover {
+	text-decoration:none;
+	color:#585858;
+	cursor:pointer;
+}
+.glossaire {
+	font-size:16px;
+	line-height:20px;
+	color:#555555;
+}
+EM {
+	color:#555555;
+	font-size:12px;
+}
+.tdBody {
+	width:100%;
+}
+.textarea {
+	overflow:hidden;
+	width:320px;
+	height:100px;
+}
+.ligne {
+	background:url('/images/logos/ligne-rouge-bottom.gif') 0px 2px;
+	background-repeat:repeat-x;
+	width:820px;
+}
+.drapeau {
+	background-image:url('/images/logos/drapeaux.jpg');
+	width:20px;
+	height:12px;
+	margin-right:6px;
+}
+.drapeau.en {
+	background-position:-0px 0px;
+}
+.drapeau.es {
+	background-position:-20px 0px;
+}
+.drapeau.fr {
+	background-position:-40px 0px;
+}
+.drapeau.pt {
+	background-position:-60px 0px;
+}
+#flagLanguage{
+	display:none;
+	position:absolute;
+}
+.pageOn{
+	width:20px;
+	height:18px;
+	background-image:url('/images/alpha/pageOn.png'); 
+	float:left;
+	font-weight:bold;
+	font-size:12px;
+	font-family:Verdana, Geneva, Tahoma, sans-serif;
+	text-align:center;
+	padding-top:3px;
+	margin-left:5px;
+	margin-top:0px;
+	overflow:hidden;
+}
+.pageOn a{
+	color:#FFFFFF;
+}
+.pageOff{
+	width:20px;
+	height:18px;
+	background-image:url('/images/alpha/pageOff.png'); 
+	float:left; 
+	font-weight:bold;
+	font-size:12px;
+	font-family:Verdana, Geneva, Tahoma, sans-serif;
+	text-align:center;
+	padding-top:3px;
+	margin-left:5px;
+	margin-top:0px;
+	overflow:hidden;
+}
+.pageOff a:hover{
+	color:#5F5F5F;
+}
+.pageOff a{
+	color:#FFFFFF;
+}
+.table {
+	width:100%;
+	border-collapse:collapse;
+	border-width:1px;
+}
+.tableArticles {
+	width:323px;
+	border-collapse:separate;
+	border-style:solid;
+	border-color:#DDDDDD;
+	border-width:2px;
+}
+.tableArticles3c {
+	width:666px;
+	border-collapse:separate;
+	border-style:solid;
+	border-color:#DDDDDD;
+	border-width:2px;
+}
+.nota {
+	width:323px;
+ 	padding:5px;
+	font-style:italic;
+	border-width:2px;
+	border-color:#DDDDDD;
+	border-style:solid;
+	background-color:#FffCE0;
+}
+.tableEdition {
+	width:323px;
+	border-width:2px;
+	border-color:#DDDDDD;
+	border-style:solid;
+	line-height:14px;	
+}
+.tableEdition tr:nth-child(even) {
+	background-color:#F9ECE0;
+	font-size:12px;
+}
+.tableEdition tr:nth-child(odd) {
+	background-color:#FFDFBF;
+	font-size:12px;
+}
+.tableEdition3C {
+	width:666px;
+	border-width:2px;
+	border-color:#DDDDDD;
+	border-style:solid;
+	line-height:18px;	
+}
+.tableEdition3C tr:nth-child(even) {
+	background-color:#F9ECE0;
+	font-size:12px;
+}
+.tableEdition3C tr:nth-child(odd) {
+	background-color:#FFDFBF;
+	font-size:12px;
+}
+.tableEditionGrand {
+	width:1010px;
+	border-style:solid;
+	border-color:#DDDDDD;
+}
+.tableEditionGrand tr:nth-child(even) {
+	background-color:#F9ECE0;
+	font-size:12px;
+}
+.tableEditionGrand tr:nth-child(odd) {
+	background-color:#FFDFBF;
+	font-size:12px;
+}
+.table1200 {
+	width:1200px;
+	border-collapse:collapse;
+}
+
+.divAcceuil {
+	width:1010px;
+	border-style:solid;
+	border-color:#E6E6E6;
+	border-width:1px;
+}
+
+.tdVignettes {
+	padding-top:5px;
+	padding-bottom:18px;
+	padding-left:10px;
+	padding-right:10px;
+}
+
+.divVignettes {
+	width:666px;
+}
+
+.divVignetteC1 {
+	width:323px;
+	float:left;
+}
+
+.divVignetteC2 {
+	width:323px;
+	position:relative;
+	float:right;
+}
+
+.divVignetteImage {
+	position:relative;
+	float:left;
+}
+
+.divVignetteDesc {
+	position:relative;
+	float:left;
+	width:290px;
+	font-size:14px;
+	color:#A11E23;
+	text-align:justify;
+	padding:15px;
+	border-style:solid;
+	border-color:#E6E6E6;
+	border-width:1px;
+}
+
+.divRubriques {
+	position:absolute;
+	float:right;
+	width:323px;
+	border-style:solid;
+	border-color:#E6E6E6;
+	border-width:1px;
+}
+.tableRubriques {
+	font-size:14px;
+	line-height:20px;
+}
+tr.tableRubriques {
+	border-bottom:0px;
+}
+a.tableRubriques {
+	border:0px;
+	text-decoration:none;
+	color:#585858;
+	cursor:pointer;
+	font-size:14px;
+	background:url("/images/logos/puce.png") 0px 3px no-repeat;
+	padding-left:20px;
+}
+.premierTd {
+	font-size:18px;
+	text-align:center;
+	line-height:25px;
+	width:323px;
+	color:#FFFFFF;
+	background-color:#A11E23;
+}
+.premierTd a {
+	text-decoration:none;
+	color:#FFFFFF;
+	background-color:#A11E23;
+}
+.video169 {
+	text-align:center;
+	width:320px;
+	height:180px;
+}
+.video43 {
+	text-align:center;
+	width:320px;
+	height:240px;
+}
+.video44 {
+	text-align:center;
+	width:320px;
+	height:320px;
+}
+.videoCarree {
+	text-align:center;
+	width:320px;
+	height:290px;
+}
+.video3Colonnes {
+	text-align:center;
+	width:660px;
+	height:405px;
+}
+.ligneVide {
+	line-height:10px;
+}
+
+.colonneEdition {
+	width:323px;
+}
+.colonneEditionADroiteDuTitre {
+	width:323px;
+	vertical-align:middle;
+}
+.colonneADroiteDuTitreArticle {
+	width:666px;
+	vertical-align:middle;
+}
+.colonneEditionCategorie {
+	width:323px;
+	vertical-align:middle;
+}
+.colonneEditionVide {
+	width:323px;
+}
+.colonneEditionSousTitre {
+	width:auto;
+}
+.colonneEditionImage {
+	width:323px;
+}
+.colonneEditionTable {
+	width:323px;
+	font-size:11px;
+	color:#585858;
+	text-align:justify;
+}
+.colonneSeparateur {
+	width:20px;
+}
+IMG {
+	border-width:0px;
+}
+.imgEdition {
+	margin:auto;
+	display:block;
+	height:auto;
+	width:auto;
+}
+.imgSmall {
+	margin:auto;
+	display:block;
+	height:113px;
+	width:150px;
+}
+.imgArticles {
+	margin:auto;
+	display:block;
+	width:310px;
+	height:264px;
+}
+.tableauGrand {
+	width:1010px;
+	border-collapse:collapse;
+	border-width:0px;
+}
+.tableauMenu {
+	width:760px;
+	border:0px;
+	border-collapse:collapse;
+	padding:0px;
+	font-size:12px;
+	color:#A11E23;
+	background-color:#FFFFFF;
+}
+.includeCenter {
+	text-align:center;
+}
+.menuCenter {
+	width:168px;
+	text-align:center;
+}
+.tdArticles {
+	font-size:11px;
+	text-align:center;
+	padding-bottom:10px;
+}
+.tdCenter {
+	text-align:center;
+}
+.tdCenterWhite {
+	text-align:center;
+	color:white;
+ 	font-weight:bold;
+}
+.tdCenterRed {
+	text-align:center;
+	color:#A11E23;
+ 	font-weight:bold;
+}
+.tdSeparateur {
+	width:15px;
+}
+.divSat {
+	width:490px;
+}
+.divCenter {
+	text-align:center;
+	vertical-align:middle;
+}
+.divTop {
+	border:2px;
+	padding:3px;
+	border-color:#A11E23;
+	width:920px;
+	height:573px;
+	border-style:solid;
+}
+.divDroite {
+	border:2px;
+	padding:3px;
+	border-color:#A11E23;
+	width:60px;
+	height:573px;
+	border-style:solid;
+}
+.category {
+	font-size:11px;
+	color:#009933;
+	font-style:italic;
+}
+.pCenter {
+	text-align:center;
+	font-size:11px;
+	color:#585858;
+}
+.pRight {
+	text-align:right;
+}
+.tdSearchGoogle {
+	width:260px;
+	padding-right:5px;
+}
+.tdImgLogoAstronoo {
+	width:282px;
+}
+.bandeauDroit {
+	width:170px;
+	text-align:center;
+	border-bottom-width:0px;
+}
+.pubDroit {
+	width:170px;
+	height:600px;
+	text-align:center;
+	border-bottom-width:0px;
+}
+.imgGoogle {
+	width:730px;
+	height:90px;
+}
+.tdRight {
+	text-align:right;
+}
+.td3colonnes {
+	width:666px;
+}
+.alignBottom {
+	vertical-align:bottom;
+}
+.lineBackground {
+	background-color:#9C1615;
+}
+.titre {
+	font-size:14px;
+	font-weight:bold;
+	color:#585858;
+	background-color:#FFFFFF;
+}
+.popMenu {
+	text-align:center;
+	font-size:24px;
+	font-weight:bold;
+	line-height:80px;
+	color:#CCCCCC;
+	margin-top:20px;
+	margin-bottom:20px;
+	background-color:black;
+}
+.population {
+	text-align:left;
+	font-size:16px;
+	font-weight:bold;
+	color:#808080;
+}
+.titrePage {
+	font-size:14px;
+	font-weight:bold;
+	color:#000000;
+	background-color:#FFFFFF;
+}
+.sousTitre {
+	font-size:12px;
+	color:#A11E23;
+	width:323px;
+}
+.faq {
+	font-size:12px;
+	color:#A11E23;
+}
+.TexteBasDePage {
+	font-size:10px;
+	color:#999999;
+	font-style:italic;
+}
+.TexteBasDePage a {
+	font-size:10px;
+	color:#999999;
+	font-style:italic;
+}
+.traduction {
+	font-size:12px;
+	color:#666666;
+	width:323px;
+	vertical-align:middle;
+}
+.bleuFonce {
+	color:#1063A5;
+	font-weight:bold;
+}
+.bleuClair {
+	color:#3366FF;
+	font-weight:bold;
+}
+.bleuTresClair {
+	color:#99CCFF;
+	font-weight:bold;
+}
+.red {
+	color:#EF5242;
+	font-weight:bold;
+}
+.black {
+	color:#000000;
+	font-weight:bold;
+}
+.green {
+	color:#008000;
+	font-weight:bold;
+}
+.vertFonce {
+	font-size:11px;
+	color:white;
+	text-align:center;
+	background-color:#008000;
+}
+.vert {
+	font-size:11px;
+	text-align:center;
+	background-color:lime;
+}
+.vertTexte {
+	font-size:11px;
+	background-color:lime;
+}
+.jaune {
+	font-size:11px;
+	text-align:center;
+	background-color:yellow;
+}
+.jauneTexte {
+	font-size:11px;
+	background-color:yellow;
+}
+.orange {
+	font-size:11px;
+	text-align:center;
+	background-color:orange;
+}
+.orangeTexte {
+	font-size:11px;
+	color:black;
+	background-color:orange;
+}
+.rouge {
+	font-size:11px;
+	color:white;
+	text-align:center;
+	background-color:red;
+}
+.rougeTexte {
+	font-size:11px;
+	color:white;
+	background-color:red;
+}
+.bleu {
+	font-size:11px;
+	color:white;
+	text-align:center;
+	background-color:blue;
+}
+.magenta {
+	font-size:11px;
+	color:white;
+	text-align:center;
+	background-color:fuchsia;
+}
+.cyan {
+	font-size:11px;
+	color:black;
+	text-align:center;
+	background-color:aqua;
+}
+}.noir {
+	font-size:11px;
+	color:white;
+	text-align:center;
+	background-color:black;
+}
+.violet {
+	font-size:11px;
+	color:white;
+	text-align:center;
+	background-color:#660099;
+}
+.persee {background-color:#2fc7b2;}
+.norma {background-color:#938cff;}
+.sagittaire {background-color:#f66d67;}
+.crux {background-color:#08c851;}
+/*** BULLE IMAGE ***/
+a.bulleImage {
+	position:relative;
+    border-bottom : 1px dashed #A11E23;
+	z-index:999;
+}
+a.bulleImage span {
+	display:none;
+}
+a.bulleImage:hover span {
+	display:block;
+	position:absolute;
+	top:2em;
+	left:-30em;
+}
+/*** BULLE SIMPLE IMAGE ***/
+a.bulleSimpleImage {
+	position:relative;
+    border-bottom : 1px dashed #A11E23;
+	z-index:999;
+}
+a.bulleSimpleImage span {
+	display:none;
+}
+a.bulleSimpleImage:hover span {
+	display:block;
+	position:absolute;
+	top:2em;
+	left:0em;
+}
+/*** BULLE ASTRONOO ***/
+a.bulleAstronoo {
+	position:relative;
+    border-bottom : 1px dashed #A11E23;
+	z-index:998;
+}
+a.bulleAstronoo:hover {
+	z-index:25;
+	background-color:#FFFF00;
+	z-index:999;
+}
+a.bulleAstronoo span {
+	display:none;
+	z-index:1;
+}
+a.bulleAstronoo:hover span {
+	display:block;
+	position:absolute;
+	top:2em;
+	left:2em;
+	width:29em;
+	border:1px solid #A11E23;
+	background-color:#FFFFCC;
+	color:#585858;
+	text-align:justify;
+	font-size:11px;
+	padding:10px;
+}
+/*** BULLE COLONNE DE DROITE ***/
+a.bulleDroite {
+	position:relative;
+    border-bottom : 1px dashed #A11E23;
+	z-index:999;
+}
+a.bulleDroite:hover {
+	z-index:25;
+	background-color:#FFC;
+}
+a.bulleDroite span {
+	display:none;
+}
+a.bulleDroite:hover span {
+	display:block;
+	position:absolute;
+	top:2em;
+	left:-9em;
+	width:25em;
+	border:1px solid #A11E23;
+	background-color:#FFFFCC;
+	color:#585858;
+	font-family:Trebuchet MS;
+	text-align:justify;
+	font-size:10px;
+	padding:10px;
+}
+/*** BULLE COLONNE DE DROITE IMAGE ***/
+a.bulleDroiteImage {
+	position:relative;
+    border-bottom : 1px dashed #A11E23;
+	z-index:999;
+}
+a.bulleDroiteImage span {
+	display:none;
+}
+a.bulleDroiteImage:hover span {
+	display:block;
+	position:absolute;
+	top:2em;
+	left:-30em;
+	width:25em;
+}
+/*** TOOLTIP 
+div#REVO_ToolTipDiv {
+	position:absolute;
+	visibility:hidden;
+	left:0;
+	top:0;
+	z-index:1000;
+	width:300px;
+	padding:3px 3px 3px 5px;
+	font-family:Arial;
+	text-align:justify;
+	font-size:11px;
+	background-color:#FFFFCC;
+	border:1px solid #A11E23;
+} 
+***/
+/*** ZOOM IMAGE ***/
+#miniature {
+	position:relative;
+}
+#big {
+	position:relative;
+}
+#discovery2 {
+	position:relative;
+	z-index:10;
+}
+#miniature2 {
+	position:relative;
+}
+#big2 {
+	position:absolute;
+	top:20px;
+	left:-342px;
+	border:solid 2px #066A7F;
+	z-index:20;
+}
+#miniature3 {
+	position:relative;
+}
+#big3 {
+	position:relative;
+}
+/*** FIN ZOOM IMAGE ***/
+/*** PLANETES ***/
+.mercure {
+	font-size:13px;
+	color:#066A7F;
+}
+.venusTerre {
+	font-size:15px;
+	color:#066A7F;
+}
+.mars {
+	font-size:14px;
+	color:#066A7F;
+}
+.jupiter {
+	font-size:24px;
+	color:#066A7F;
+}
+.saturne {
+	font-size:22px;
+	color:#066A7F;
+}
+.uranus {
+	font-size:20px;
+	color:#066A7F;
+}
+.neptune {
+	font-size:18px;
+	color:#066A7F;
+}
+.pipeLienPlanetes {
+	font-size:18px;
+	color:#A11E23;
+}
+/*** FIN PLANETES ***/
+/*** Tableau des éléments ***/
+.tdElemMetauxAlcalins {
+	font-size:11px;
+	background-color:#fbd1b5;
+}
+.tdElemBleuVert {
+	font-size:11px;
+	background-color:#33CCCC;
+}
+.tdElemMetauxTransition {
+	font-size:11px;
+	background-color:#AFC4D5;
+}
+.tdElemMetauxPauvres {
+	font-size:11px;
+	background-color:#b9b9b9;
+}
+.tdElemPaille {
+	font-size:11px;
+	width:216px;
+	background-color:#FFFFCC;
+}
+.tdElemAcalinoTerreux {
+	font-size:11px;
+	background-color:#F5B000;
+}
+.tdElemVert {
+	font-size:11px;
+	background-color:#c4fac4;
+}
+.tdElemGazRare {
+	font-size:11px;
+	background-color:#CCFF66;
+}
+.tdElemNonMetaux {
+	font-size:11px;
+	background-color:#33CCCC;
+}
+.tdElemLanthanine {
+	font-size:11px;
+	background-color:#fddafd;
+}
+.tdElemHalogene {
+	font-size:11px;
+	background-color:#f9f9ab;
+}
+.tdElemMetalloides {
+	font-size:11px;
+	background-color:#d8f6f6;
+}
+.tdElemRouge {
+	font-size:11px;
+	color:black;
+	background-color:#F56060;
+}
+.zodiaqueSymboles {
+	font-size:32px;
+	padding-top:4px;
+	color:#0033CC;
+	text-align:center;
+	vertical-align:middle;
+	line-height:32px;
+}
+.zodiaque {
+	font-size:11px;
+	color:#0033CC;
+	text-align:center;
+}
+.resume {
+	font-size:12px;
+	color:#0033CC;
+	padding: 4px 4px 4px 4px;
+}
+
+div.glossary {
+	display:none;
+}
+
+div.glossary_on {
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	top: 0;
+	left: 0;
+	display:block;
+	position:absolute;
+	width:298px;
+	border:1px solid #A11E23;
+	background-color: #FFFFCC;
+	color:#585858;
+	text-align:justify;
+	font-size:11px;
+	padding:10px;
+	z-index:99;
+}
+
+/*** BULLE ONMOUSEOVER POUR UNE DEFINITION ***/
+a.bulle_companion {
+	position:relative;
+	z-index:999;
+	color:#666666;
+	text-decoration:none;
+    border-bottom : 1px dashed #A11E23;
+}
+
+/*** BULLE COULEUR DE FOND AU SURVOLE ***/
+a.bulle_companion:hover {
+	z-index:99;
+	background-color:#FFFFCC;
+}
+
+definition{
+	position: absolute;
+	top: -1px;
+	left: -1px;
+	overflow: hidden;
+	width: 1px;
+	height: 1px;
+}
+
+div.definition_off {
+	display:none;
+}
+
+div.definition_on {
+	display:block;
+
+	z-index:1000;
+	position:absolute;
+	width:298px;
+	height: auto;
+	padding:10px;
+
+	border:1px solid #A11E23;
+	background-color: #FFFFCC;
+
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-size:11px;
+	color:#585858;
+	text-align:justify;
+}
+
+#tools {
+	float: left;
+	background-color: #FFFFFF;
+}
+
+.zoom1 .H1 {
+	font-size:20px;
+}
+
+.zoom1 .H2 {
+	font-size: 35px;
+}
+
+.zoom1 .H3 {
+	font-size:20px;
+}
+
+.zoom1 .TD{
+	font-size: 20px;
+}
+
+.zoom1 .nota {
+	font-size:20px;
+}
+
+.zoom2 .H1 {
+	font-size: 24px;
+}
+
+.zoom2 .H2 {
+	font-size: 35px;
+}
+
+.zoom2 .H3 {
+	font-size:24px;
+}
+
+.zoom2 .TD{
+	font-size:24px;
+}
+
+.zoom2 .nota {
+	font-size: 24px;
+}
+
+.zoom3 .H1 {
+	font-size: 28px;
+}
+
+.zoom3 .H2 {
+	font-size: 35px;
+}
+
+.zoom3 .H3 {
+	font-size:28px;
+}
+
+.zoom3 .TD{
+	font-size:40px;
+}
+
+.zoom3 .nota {
+	font-size: 28px;
+}
+
+
+
+

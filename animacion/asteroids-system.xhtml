@@ -1,0 +1,251 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<!-- SYSTEM SOLAR BEGIN 1/2 -->
+	<link rel="stylesheet" type="text/css" href="1graphic.css"/>
+	<script type="text/javascript">
+		var wording = {};
+		wording.fr = {
+		 sun: "Soleil",
+		 mercury: "Mercure",
+		 venus: "Vénus",
+		 earth: "Terre",
+		 mars: "Mars",
+		 ceres: "(1) Cérès",
+		 pallas: "(2) Pallas",
+		 vesta: "(4) Vesta",
+		 hygiea: "(10) Hygiea",
+		 sylvia: "(87) Sylvia",
+		 hektor: "(624) Hector",
+		 europa: "(52) Europa",
+		 eunomia: "(15) Eunomia",
+		 asteroid: "ceinture d'astéroïdes",
+		 asteroidLeftPosition: -200,
+		 jupiter: "Jupiter",
+		 saturn: "Saturne",
+		 uranus: "Uranus",
+		 neptun: "Neptune",
+		 eris: "Eris",
+		 makemake: "Makemake",
+		 kuiper: "ceinture de Kuiper",
+		 kuiperLeftPosition: -2500,
+		 labelSpeed: "vitesse :",
+		 labelSpeedUnit: "jour/seconde",
+		 labelSpeedUnits: "jours/seconde",
+		 labelNow: "maintenant",
+		 labelZoom: "zoom",
+		 labelOrbit: "orbites",
+		 labelBtLabel: "libellés",
+		 labelBtDistance: "aphélie/périhélie",
+		 labelBtDwarf: "astéroïdes",
+		};
+
+		wording.en = {
+		 sun: "Sun",
+		 mercury: "Mercury",
+		 venus: "Venus",
+		 earth: "Earth",
+		 mars: "Mars",
+		 ceres: "(1) Ceres",
+		 pallas: "(2) Pallas",
+		 vesta: "(4) Vesta",
+		 hygiea: "(10) Hygiea",
+		 sylvia: "(87) Sylvia",
+		 hektor: "(624) Hektor",
+		 europa: "(52) Europa",
+		 eunomia: "(15) Eunomia",
+		 asteroid: "Asteroids belt",
+		 asteroidLeftPosition: -150,
+		 jupiter: "Jupiter",
+		 saturn: "Saturn",
+		 uranus: "Uranus",
+		 neptun: "Neptun",
+		 pluto: "Pluto",
+		 eris: "Eris",
+		 makemake: "Makemake",
+		 kuiper: "Kuiper belt",
+		 kuiperLeftPosition: -1500,
+		 labelSpeed: "speed:",
+		 labelSpeedUnit: "day/second",
+		 labelSpeedUnits: "days/second",
+		 labelNow: "now",
+		 labelZoom: "zoom",
+		 labelOrbit: "orbits",
+		 labelBtLabel: "labels",
+		 labelBtDistance: "aphelion/perihelion",
+		 labelBtDwarf: "asteroids"
+		};
+
+		wording.es = {
+		 sun: "Sol",
+		 mercury: "Mercurio",
+		 venus: "Venus",
+		 earth: "Tierra",
+		 mars: "Marte",
+		 ceres: "(1) Ceres",
+		 pallas: "(2) Palas",
+		 vesta: "(4) Vesta",
+		 hygiea: "(10) Higía",
+		 sylvia: "(87) Silvia",
+		 hektor: "(624) Héctor",
+		 europa: "(52) Europa",
+		 eunomia: "(15) Eunomia",
+		 asteroid: "Cinturón de asteroides",
+		 asteroidLeftPosition: -200,
+		 jupiter: "Júpiter",
+		 saturn: "Saturno",
+		 uranus: "Urano",
+		 neptun: "Neptuno",
+		 pluto: "Plutón",
+		 eris: "Eris",
+		 makemake: "Makemake",
+		 kuiper: "Cinturón de Kuiper",
+		 kuiperLeftPosition: -2500,
+		 labelSpeed: "velocidad:",
+		 labelSpeedUnit: "día/segundo",
+		 labelSpeedUnits: "días/segundo",
+		 labelNow: "hoy",
+		 labelZoom: "zoom",
+		 labelOrbit: "órbitas",
+		 labelBtLabel: "etiquetas",
+		 labelBtDistance: "afelio/perihelio",
+		 labelBtDwarf: "asteroides"
+		};
+
+		wording.pt = {
+		 sun: "Sol",
+		 mercury: "mercúrio",
+		 venus: "Vênus",
+		 earth: "Terra",
+		 mars: "Marte",
+		 ceres: "(1) Ceres",
+		 pallas: "(2) Palas",
+		 vesta: "(4) Vesta",
+		 hygiea: "(10) Hígia",
+		 sylvia: "(87) Sylvia",
+		 hektor: "(624) Hektor",
+		 europa: "(52) Europa",
+		 eunomia: "(15) Eunomia",
+		 asteroid: "Cinturão de asteróides",
+		 asteroidLeftPosition: -200,
+		 jupiter: "Júpiter",
+		 saturn: "Saturno",
+		 uranus: "Urano",
+		 neptun: "Netuno",
+		 pluto: "Plutão",
+		 eris: "Eris",
+		 makemake: "Makemake",
+		 kuiper: "Cinturão de Kuiper",
+		 kuiperLeftPosition: -2500,
+		 labelSpeed: "velocidade:",
+		 labelSpeedUnit: "dia/segundo",
+		 labelSpeedUnits: "dias/segundo",
+		 labelNow: "hoje",
+		 labelZoom: "zoom",
+		 labelOrbit: "órbitas",
+		 labelBtLabel: "etiquetas",
+		 labelBtDistance: "afélio/periélio",
+		 labelBtDwarf: "asteróides"
+		};
+
+		wording.de = {
+		 sun: "Sonne",
+		 mercury: "Merkur",
+		 venus: "Venus",
+		 earth: "Erde",
+		 mars: "Mars",
+		 ceres: "(1) Ceres",
+		 pallas: "(2) Pallas",
+		 vesta: "(4) Vesta",
+		 hygiea: "(10) Hygiea",
+		 sylvia: "(87) Sylvia",
+		 hektor: "(624) Hektor",
+		 europa: "(52) Europa",
+		 eunomia: "(15) Eunomia",
+		 asteroid: "Asteroidengürtel",
+		 asteroidLeftPosition: -200,
+		 jupiter: "Jupiter",
+		 saturn: "Saturn",
+		 uranus: "Uranus",
+		 neptun: "Neptun",
+		 pluto: "Pluton",
+		 eris: "Eris",
+		 makemake: "Makemake",
+		 kuiper: "Kuipergürtel",
+		 kuiperLeftPosition: -2500,
+		 labelSpeed: "Geschwindigkeit:",
+		 labelSpeedUnit: "Tag/Sekunde",
+		 labelSpeedUnits: "Tage/Sekunde",
+		 labelNow: "jetzt",
+		 labelZoom: "zoom",
+		 labelOrbit: "Bahnen",
+		 labelBtLabel: "Etiketten",
+		 labelBtDistance: "Aphel/Perihel",
+		 labelBtDwarf: "Asteroids"
+		};
+	</script>
+
+	<script type="text/javascript" src="common.js"></script>
+	<script type="text/javascript" src="matrix.js"></script>
+	<script type="text/javascript" src="1Graphic.js"></script>
+	<script type="text/javascript" src="OrbitalSystem.js"></script>
+	<script type="text/javascript" src="AsteroidSystem.js"></script>
+
+
+<!-- SYSTEM SOLAR END 1/2 -->
+</head>
+<body>
+<!-- SYSTEM SOLAR BEGIN 2/2 -->
+	<div id="SolarSystem">
+		<div>
+			<iframe id="SolarSystemIframe" src=" image.svg?graphicId=0" width="1010" height="600" scrolling="no"/>
+		</div>
+		<div class="timeMng">
+			<div class="date"><font id="SolarSystemDate"></font></div>
+			<div class="speed"><font id="SolarSystemSpeedLabel">Speed :</font> <font id="SolarSystemSpeed"></font> <font id="SolarSystemSpeedUnit">Day/second</font></div>
+		</div>
+		<div class="timeMngButtons">
+			<button id="SolarSystemSpeed-100" class="speedControl">-100</button> 
+			<button id="SolarSystemSpeed-10" class="speedControl">-10</button> 
+			<button id="SolarSystemSpeed-1" class="speedControl">-1</button> 
+			<button id="SolarSystemSpeedStop" class="speedControl">Stop</button> 
+			<button id="SolarSystemSpeed+1" class="speedControl">+1</button> 
+			<button id="SolarSystemSpeed+10" class="speedControl">+10</button> 
+			<button id="SolarSystemSpeed+100" class="speedControl">+100</button> 
+			&nbsp;&nbsp;&nbsp;
+			<button id="SolarSystemToday">Now</button>
+		</div>
+		<div class="zoomMng">
+				<button id="SolarSystemZoom+" class="zoomP">+</button> 
+				<div id="SolarSystemZoom">zoom</div>
+				<button id="SolarSystemZoom-" class="zoomM disabled">-</button> 
+		</div>
+		<div class="orbitMng">
+				<button id="SolarSystemOrbit+" class="orbitP">+</button> 
+				<div id="SolarSystemOrbit">orbits</div>
+				<button id="SolarSystemOrbit-" class="orbitM">-</button> 
+		</div>
+		<div class="rotateMng">
+				<button id="SolarSystemRotateZ+" class="rotateZP arrow">&#9650;</button>
+				<button id="SolarSystemRotateZ-" class="rotateZP arrow">&#9660;</button> 
+				<button id="SolarSystemRotate0" class="rotate0">0</button>
+				<button id="SolarSystemRotateY+" class="rotateYP arrow">&#9668;</button>
+				<button id="SolarSystemRotateY-" class="rotateYM arrow">&#9658;</button>
+		</div>
+		<div class="optionsMng">
+				<button id="SolarSystemName">labels</button>
+				<button id="SolarSystemDist">distances</button>
+				<button id="SolarSystemDwarf">dwarf planets</button>
+		</div>
+	</div>
+	<script type="text/javascript">
+		SolarSystem.draw("SolarSystem");
+	</script>
+<!-- SYSTEM SOLAR END 2/2 -->
+
+</body>
+</html>
